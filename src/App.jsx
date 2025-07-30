@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from 'react';
 import TabBuilder from './components/TabBuilder';
 import * as Tone from 'tone';
-import Notes from './components/Notes';
+import Notes from './components/Notes'; 
 import FlexBox from './elements/FlexBox';
 import NoteTrash from './components/NoteTrash';
 
@@ -36,12 +36,6 @@ function App() {
 
       <FlexBox h='50%' w='100%' bg='none'>
         {ready && <TabBuilder synth={synthRef.current} />}
-      </FlexBox>
-
-
-      <FlexBox id='note-trash-parent' h='50%' w='100%'>
-        <button onClick={() => setToggleTrash(prev => !prev)}>Trash</button>
-       {toggleTrash && <NoteTrash toggleTrash={toggleTrash}/>}
       </FlexBox>
 
       <FlexBox h='50%' w='100%'>

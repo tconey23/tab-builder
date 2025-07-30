@@ -1,0 +1,96 @@
+{
+    "name": "Texas Son - Verse",
+    "bpm": 100,
+    "timeline":[
+        [
+            0,
+            {
+                "note": "A3",
+                "length": "4n",
+                "index": 0,
+                "url": "/guitar-acoustic/A3.mp3"
+            }
+        ],
+        [
+            0.5,
+            {
+                "note": "A3",
+                "length": "4n",
+                "index": 1,
+                "url": "/guitar-acoustic/A3.mp3"
+            }
+        ],
+        [
+            1,
+            {
+                "note": "C4",
+                "length": "8n",
+                "index": 2,
+                "url": "/guitar-acoustic/C4.mp3"
+            }
+        ],
+        [
+            1.25,
+            {
+                "note": "B3",
+                "length": "8n",
+                "index": 3,
+                "url": "/guitar-acoustic/B3.mp3"
+            }
+        ],
+        [
+            1.5,
+            {
+                "note": "A3",
+                "length": "8n",
+                "index": 4,
+                "url": "/guitar-acoustic/A3.mp3"
+            }
+        ],
+        [
+            1.75,
+            {
+                "note": "G3",
+                "length": "8n",
+                "index": 5,
+                "url": "/guitar-acoustic/G3.mp3"
+            }
+        ],
+        [
+            3,
+            {
+                "note": "G3",
+                "length": "8n",
+                "index": 7,
+                "url": "/guitar-acoustic/G3.mp3"
+            }
+        ],
+        [
+            3.25,
+            {
+                "note": "G3",
+                "length": "8n",
+                "index": 8,
+                "url": "/guitar-acoustic/G3.mp3"
+            }
+        ],
+        [
+            3.5,
+            {
+                "note": "A3",
+                "length": "8n",
+                "index": 9,
+                "url": "/guitar-acoustic/A3.mp3"
+            }
+        ],
+        [
+            3.75,
+            {
+                "note": "D3",
+                "length": "4n",
+                "index": 10,
+                "url": "/guitar-acoustic/D3.mp3"
+            }
+        ]
+    ]
+}
