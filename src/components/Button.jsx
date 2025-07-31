@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button = ({children, clk, ref}) => {
+const Button = ({children, clk, ref, st={}}) => {
   return (
-    <button ref={ref} onClick={clk} type='button'>{children}</button>
+    <button style={{...st}} ref={ref} onClick={clk} type='button'>{children}</button>
   )
 }
 

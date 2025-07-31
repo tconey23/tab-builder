@@ -174,16 +174,6 @@ const handleDrop = (e, targetIndex) => {
 
   setTimeline((prev) => {
     const updated = [...prev];
-
-
-    // if (source === "timeline" && !isNaN(sourceIndex)) {
-    //   updated.splice(sourceIndex, 1);
-    //   if (sourceIndex < targetIndex) {
-    //     targetIndex -= 1;
-    //   }
-    // }
-    
-
     updated.push(newItem)
     return updated;
   });
@@ -269,13 +259,18 @@ const changeLength = (i, newLength) => {
 
   return (
     <FlexBox w='95%'>
+      <FlexBox>
+
       <FlexBox dir='row'>
         <FlexBox>
           <Button ref={saveIconRef} clk={() => setToggleMenu(prev => !prev)}><i className="fi fi-br-menu-burger"></i></Button>
         </FlexBox>
+
         <FlexBox w="100%" jc="center" ai="center" my={2}>
           <button onClick={playTimeline}>▶ Play Timeline</button>
         </FlexBox>
+      </FlexBox>
+        {selectedTimeline && <Text>{selectedTimeline.name}</Text>}
       </FlexBox>
       <FlexBox w="100%" h="200px" bg="#eee" jc="flex-start" dir="row" onDrop={handleDrop} onDragOver={allowDrop}>
         {timeline.map((event, index) => (
@@ -305,10 +300,6 @@ const changeLength = (i, newLength) => {
           </FlexBox>
         ))}
       </FlexBox>
-      <button onClick={() => setClickTrack((prev) => !prev)}>
-        {clickTrack ? 'Disable' : 'Enable'} Click Track
-      </button>
-
 
       <AnimatePresence>
         {toggleMenu && (
@@ -360,6 +351,9 @@ const changeLength = (i, newLength) => {
             ) : (
               <Button clk={() => setReqLoad(true)}>Load</Button>
             )}
+          <button onClick={() => setClickTrack((prev) => !prev)}>
+            {clickTrack ? 'Disable' : 'Enable'} Click Track
+          </button>
           </MotionFlex>
         )}
       </AnimatePresence>
